@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme._226Complete">
+        <activity
+            android:name=".unit1.cardview.CardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".unit1.recyclerview.RecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".unit1.customgridview.CustomGridActivity"
+            android:exported="true" />
+        <activity
+            android:name=".unit1.customlistview.CustomListView"
+            android:exported="true" />
+        <activity
+            android:name=".unit3.foregroundservice.ForegroundActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".unit3.foregroundservice.MyForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <activity
+            android:name=".unit3.bound.BoundActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".unit3.bound.MyBoundService"
+            android:exported="false" />
+
+        <activity
+            android:name=".unit3.unbound.UnBoundActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".unit3.unbound.MyUnboundService"
+            android:exported="false" />
+
+        <activity
+            android:name=".unit3.styles.StylesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".unit3.fab.FabHome"
+            android:exported="false" />
+        <activity
+            android:name=".unit6.CalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".unit6.TestingActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".unit5.googlemaps.GoogleMapsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".unit5.fusedlocation.FusedLocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".unit4.room.RoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".unit4.sqlite.SQLiteHome"
+            android:exported="true" />
+        <activity
+            android:name=".unit2.CoroutineHome"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

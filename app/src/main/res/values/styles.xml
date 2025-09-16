@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+    </style>
+
+    <!-- Custom Text Style -->
+    <style name="MyHeadingText">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="MyButtonStyle">
+        <item name="android:backgroundTint">@color/secondaryColor</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+</resources>

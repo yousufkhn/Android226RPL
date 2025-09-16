@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unit4.sqlite.SQLiteHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Insert Section -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email" />
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert User" />
+
+        <!-- Read Section -->
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Users" />
+
+        <!-- Update Section -->
+        <EditText
+            android:id="@+id/etUpdateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter User ID to Update" />
+
+        <EditText
+            android:id="@+id/etUpdateEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter New Email" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update User" />
+
+        <!-- Delete Section -->
+        <EditText
+            android:id="@+id/etDeleteId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter User ID to Delete" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete User" />
+
+        <!-- Output Section -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="#EEEEEE" />
+
+    </LinearLayout>
+
+</ScrollView>
