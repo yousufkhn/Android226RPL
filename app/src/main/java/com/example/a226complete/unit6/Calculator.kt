@@ -1,7 +1,5 @@
 package com.example.a226complete.unit6
 
-import android.util.Log
-
 class Calculator {
     fun add(a: Int, b: Int): Int {
 //        Log.d("Calculator", "Adding $a + $b")

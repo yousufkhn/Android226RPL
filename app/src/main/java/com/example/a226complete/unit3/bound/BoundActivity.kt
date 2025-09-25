@@ -1,7 +1,6 @@
 package com.example.a226complete.unit3.bound
 
 import android.content.ComponentName
-import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.Bundle
@@ -10,8 +9,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.a226complete.R
 
 class BoundActivity : AppCompatActivity() {
@@ -46,7 +43,7 @@ class BoundActivity : AppCompatActivity() {
 
 
         btnBind.setOnClickListener {
-            bindService(intent, connection, Context.BIND_AUTO_CREATE)
+            bindService(intent, connection, BIND_AUTO_CREATE)
         }
 
 

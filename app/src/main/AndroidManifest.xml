@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._226Complete">
         <activity
+            android:name=".ca1.CA1Activity"
+            android:exported="true" />
+        <activity
             android:name=".unit1.cardview.CardActivity"
             android:exported="true" />
         <activity
